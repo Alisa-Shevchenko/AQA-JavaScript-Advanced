@@ -16,7 +16,7 @@ console.log(isAdult && driverLicense);
 
 let user = "Ostap";
 let user1 = "Orest" ;                                                            
-let greeting = "Hello" + " " + user + " " + "and" + " " .concat (user1) + "!";
+let greeting = "Hello" + " " + user + " " + "and" + " ".concat (user1) + "!";
 
 console.log(greeting);
 
@@ -34,8 +34,8 @@ console.log(allVariables);
 let value1 = "5.489";
 let parseFloatValue1 = parseFloat(value1);
 let isNanValue = isNaN(parseFloatValue1);
-let toFixedValue = parseFloatValue1 .toFixed(1);
-let toStringValue = parseFloatValue1 .toString();
+let toFixedValue = parseFloatValue1.toFixed(1);
+let toStringValue = parseFloatValue1.toString();
 
 console.log(parseFloatValue1, typeof parseFloatValue1);
 console.log(isNanValue);
@@ -51,10 +51,10 @@ console.log(toStringValue, typeof toStringValue);
 
 const someText = "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikipedia Foundation.";
 
-console.log(someText .length);
-console.log(someText .replaceAll("Wikipedia", "Text"));
-console.log(someText .includes("world"));
-console.log(someText .endsWith("foundation"));
+console.log(someText.length);
+console.log(someText.replaceAll("Wikipedia", "Text"));
+console.log(someText.includes("world"));
+console.log(someText.endsWith("foundation"));
 
 // 5* Обчислення площі та об'єму
 
