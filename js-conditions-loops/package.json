@@ -1,0 +1,11 @@
+{
+  "name": "js-conditions-loops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conditionsAndloops.js",
+  "scripts": {
+    "start": "node conditionsAndloops.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
