@@ -1,0 +1,11 @@
+{
+  "name": "js-operators-coercion.",
+  "version": "1.0.0",
+  "description": "",
+  "main": "operatorsAndCoercion.js",
+  "scripts": {
+    "start": "node operatorsAndCoercion.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
