@@ -7,28 +7,37 @@
 //Якщо людина працює від більше чотиьох років, то зарплата = 666 , бонус = ксть років роботи * зарплату
 //Усі результати виведіть у консоль.
 
-let yearsOfExperience = 1.2;
+let yearsOfExperience = 2.5;
 
 let salary = 0;
 let bonus = 0;
 
 if (yearsOfExperience < 0.5) {
     salary = 0;
+    console.log(`Зарплата: ${salary}`);
+    console.log(`Бонус: ${bonus}`);
 } else if (yearsOfExperience >= 0.5 && yearsOfExperience < 1) {
     salary = 100;
     bonus = 0.01 * salary;
 } else if (yearsOfExperience >= 1 && yearsOfExperience < 2) {
     salary = 333;
     bonus = 0.03 * salary;
+    console.log(`Зарплата: ${salary}`);
+    console.log(`Бонус: ${bonus}`);
 } else if (yearsOfExperience >= 2 && yearsOfExperience < 4) {
     salary = 555;
     bonus = 0.04 * salary;
-} else {
+    console.log(`Зарплата: ${salary}`);
+    console.log(`Бонус: ${bonus}`);
+} else if (yearsOfExperience >= 4) {
     salary = 666;
     bonus = yearsOfExperience * salary;
+    console.log(`Зарплата: ${salary}`);
+    console.log(`Бонус: ${bonus}`);
 }
-console.log(`Зарплата: ${salary}`);
-console.log(`Бонус: ${bonus}`);
+else {
+    console.log("can not calculate");
+}
 
 
 // 2.Використовуючи конструкцію switch-case виведіть 12 місяців. 
