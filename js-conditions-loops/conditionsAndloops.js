@@ -7,46 +7,29 @@
 //Якщо людина працює від більше чотиьох років, то зарплата = 666 , бонус = ксть років роботи * зарплату
 //Усі результати виведіть у консоль.
 
-const yearsOfExperience = 4;
+let yearsOfExperience = 1.2;
 
-if (yearsOfExperience <= 0.5) {
-    const salary = 0;
-    const percentage = 0;
-    const bonus = salary / 100 * percentage;
+let salary = 0;
+let bonus = 0;
 
-    console.log(`Salary: ${salary}, bonus: ${bonus}`);
-
-} else if (yearsOfExperience <= 1) {
-    const salary = 100;
-    const percentage = 1;
-    const bonus = salary / 100 * percentage;
-
-    console.log(`Salary: ${salary}, bonus: ${bonus}`);
-
-} else if (yearsOfExperience <= 2) {
-    const salary = 333;
-    const percentage = 3;
-    const bonus = salary / 100 * percentage;
-
-    console.log(`Salary: ${salary}, bonus: ${bonus}`);
-
-} else if (yearsOfExperience <= 4) {
-    const salary = 555;
-    const percentage = 4;
-    const bonus = salary / 100 * percentage;
-
-    console.log(`Salary: ${salary}, bonus: ${bonus}`);
-
-} else if (yearsOfExperience > 4) {
-    const salary = 666;
-    const bonus = yearsOfExperience * salary;
-
-    console.log(`Salary: ${salary}, bonus: ${bonus}`);
-
+if (yearsOfExperience < 0.5) {
+    salary = 0;
+} else if (yearsOfExperience >= 0.5 && yearsOfExperience < 1) {
+    salary = 100;
+    bonus = 0.01 * salary;
+} else if (yearsOfExperience >= 1 && yearsOfExperience < 2) {
+    salary = 333;
+    bonus = 0.03 * salary;
+} else if (yearsOfExperience >= 2 && yearsOfExperience < 4) {
+    salary = 555;
+    bonus = 0.04 * salary;
 } else {
-
-    console.log("can not calculate")
+    salary = 666;
+    bonus = yearsOfExperience * salary;
 }
+console.log(`Зарплата: ${salary}`);
+console.log(`Бонус: ${bonus}`);
+
 
 // 2.Використовуючи конструкцію switch-case виведіть 12 місяців. 
 // Для кожного місяця ви повинні мати відповідний case в switch і виведіть назву місяця, коли цей case виконується.
