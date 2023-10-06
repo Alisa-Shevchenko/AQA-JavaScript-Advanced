@@ -1,0 +1,11 @@
+{
+  "name": "js-functions-arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions-arrays.js",
+  "scripts": {
+    "start": "node functions-arrays.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
