@@ -9,18 +9,18 @@
 // {basicPrefences : “table”}.
 // Виведіть обєкт automationQA у консоль.
 
-// const automationQA = {};
+const automationQA = {};
 
-// automationQA.programmerName = "Alisa";
-// automationQA.programmingLanguages = "JavaScript";
-// automationQA.age = 28;
-// automationQA.languages = ["Ukrainian", "English"];
-// automationQA.preferences = {
-//     basicPrefences: "table",
-//     drinks: "Coffee",
-//     food: "pizza",
-// }
-// console.log(automationQA);
+automationQA.programmerName = "Alisa";
+automationQA.programmingLanguages = "JavaScript";
+automationQA.age = 28;
+automationQA.languages = ["Ukrainian", "English"];
+automationQA.preferences = {
+    basicPrefences: "table",
+    drinks: "Coffee",
+    food: "pizza",
+}
+console.log(automationQA);
 
 // Tаск 2
 // Створіть обєкт room
@@ -30,13 +30,13 @@
 // window - булеве значення. // true/false.
 // Виведіть у консоль значення name, window.
 
-// let room = {
-//     name: "bedroom",
-//     size: 20,
-//     window: true,
-// };
+let room = {
+    name: "bedroom",
+    size: 20,
+    window: true,
+};
 
-// console.log(`Room: ${room.name}, Window: ${room.window}`);
+console.log(`Room: ${room.name}, Window: ${room.window}`);
 
 
 // Таск 3
@@ -50,23 +50,23 @@
 // Видаліть title з обєкту movie.
 // Виведіть оновлений обєкт movie у консоль.
 
-// const movie = {
-//     title: "The Shining",
-//     releaseYear: 1980,
-//     genre: "Psychological thriller",
-// };
+const movie = {
+    title: "The Shining",
+    releaseYear: 1980,
+    genre: "Psychological thriller",
+};
 
-// movie.title = "American Horror Story";
-// movie.genre = "horror";
-// movie.cast = {
-//     mainRole1: "Evan Peters",
-//     mainRole2: "Kathy Bates",
-// };
-// movie.director = "Ryan Murphy";
+movie.title = "American Horror Story";
+movie.genre = "horror";
+movie.cast = {
+    mainRole1: "Evan Peters",
+    mainRole2: "Kathy Bates",
+};
+movie.director = "Ryan Murphy";
 
-// delete movie.title;
+delete movie.title;
 
-// console.log(movie);
+console.log(movie);
 
 // Таск 4
 
@@ -94,37 +94,37 @@
 // Якщо author “George Orwell” то замініть його на довільне значення.
 // Виведіть оновлений масив об’єктів englishBooks
 
-// const englishBooks = [
-//     {
-//         title: "To Kill a Mockingbird",
-//         author: "Harper Lee",
-//         year: 1960
-//     },
-//     {
-//         title: "1984",
-//         author: "George Orwell",
-//         year: 1949
-//     },
-//     {
-//         title: "The Great Gatsby",
-//         author: "F. Scott Fitzgerald",
-//         year: 1925
-//     }
+const englishBooks = [
+    {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        year: 1960
+    },
+    {
+        title: "1984",
+        author: "George Orwell",
+        year: 1949
+    },
+    {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        year: 1925
+    }
 
-// ];
+];
 
-// for (let i = 0; i < englishBooks.length; i++) {
-//     if (englishBooks[i].title === "The Great Gatsby") {
-//         continue;
-//     }
-//     if (englishBooks[i].year > 1940) {
-//         console.log(`year: ${englishBooks[i].year}`)
-//     }
-//     if (englishBooks[i].author === "George Orwell") {
-//         englishBooks[i].author = "changed value";
-//     }
-// }
-// console.log(englishBooks)
+for (let i = 0; i < englishBooks.length; i++) {
+    if (englishBooks[i].title === "The Great Gatsby") {
+        continue;
+    }
+    if (englishBooks[i].year > 1940) {
+        console.log(`year: ${englishBooks[i].year}`)
+    }
+    if (englishBooks[i].author === "George Orwell") {
+        englishBooks[i].author = "changed value";
+    }
+}
+console.log(englishBooks)
 
 
 // Таск 5
@@ -133,26 +133,26 @@
 // Пройдіться по цьому вкладеному об'єкту циклом і виведіть всі елементи в консоль.
 
 
-// let cinemaSessions = {
-//     thrillers: {
-//         name: "Misery",
-//         time: "17pm",
-//         hall: 1
-//     }
-// }
+let cinemaSessions = {
+    thrillers: {
+        name: "Misery",
+        time: "17pm",
+        hall: 1
+    }
+}
 
-// for (let key in cinemaSessions) {
-//     if (cinemaSessions.hasOwnProperty(key)) {
-//         const object2 = cinemaSessions[key];
-//         console.log(key);
-//         for (let keys in object2) {
-//             if (object2.hasOwnProperty(keys)) {
-//                 const values = object2[keys];
-//                 console.log(`${keys}: ${values}`)
-//             }
-//         }
-//     }
-// }
+for (let key in cinemaSessions) {
+    if (cinemaSessions.hasOwnProperty(key)) {
+        const object2 = cinemaSessions[key];
+        console.log(key);
+        for (let keys in object2) {
+            if (object2.hasOwnProperty(keys)) {
+                const values = object2[keys];
+                console.log(`${keys}: ${values}`)
+            }
+        }
+    }
+}
 
 
 
@@ -166,28 +166,28 @@
 // Наприклад: address: { city, postalCode }
 // Виведіть інформацію про користувача та емейл і його адресу, використовуючи результати функцій getUserInfo та getFullAddress.
 
-// const user = {
-//     name: "Alisa",
-//     age: 28,
-//     email: "alisa@gmail.com",
-//     address: {
-//         city: "Zaporizhzhia",
-//         postalCode: "69000"
-//     }
-// };
+const user = {
+    name: "Alisa",
+    age: 28,
+    email: "alisa@gmail.com",
+    address: {
+        city: "Zaporizhzhia",
+        postalCode: "69000"
+    }
+};
 
-// function getUserInfo({ name, age }) {
-//     return `Name: ${name}, Age: ${age}`;
-// }
+function getUserInfo({ name, age }) {
+    return `Name: ${name}, Age: ${age}`;
+}
 
-// function getFullAddress({ email, address: { city, postalCode } }) {
-//     return `Email: ${email}, Address: ${city}, ${postalCode}`;
-// }
+function getFullAddress({ email, address: { city, postalCode } }) {
+    return `Email: ${email}, Address: ${city}, ${postalCode}`;
+}
 
-// const userInfo = getUserInfo(user);
-// const fullAddress = getFullAddress(user);
+const userInfo = getUserInfo(user);
+const fullAddress = getFullAddress(user);
 
-// console.log(userInfo, ",", fullAddress);
+console.log(userInfo, ",", fullAddress);
 
 
 // *Advanced. Створіть обєкт user з властивостями name, age, email, address. 
