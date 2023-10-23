@@ -1,5 +1,5 @@
 // 1. Людина хоче отримати права.
-// Створіть змінну яка буде символізувати вік людини. 
+// Створіть змінну яка буде символізувати вік людини.
 // Після чого створіть булеву змінну, яка буде визначати чи особа досягла віку коли може отримати права,( в Україні це 18 років),
 //базуючись на заченні з попередньої змінної. Результат виведіть у консоль.
 
@@ -9,14 +9,14 @@ const driverLicense = true;
 
 console.log(isAdult && driverLicense);
 
-// 2.Створіть дві змінні, які містять імена двох осіб. 
+// 2.Створіть дві змінні, які містять імена двох осіб.
 //Використовуючи конкатенацію рядків, створіть третю змінну, яка містить вітання для обох осіб.
 //Виведіть результат в консоль.
 //Базуючись на результаті всіх змінних зробіть конкантенацію всіх рядків (4 змінна, або просто обєднати у консоль лозі все) і виведіть результат у консоль.
 
 let user = "Ostap";
-let user1 = "Orest" ;                                                            
-let greeting = "Hello" + " " + user + " " + "and" + " ".concat (user1) + "!";
+let user1 = "Orest";
+let greeting = "Hello" + " " + user + " " + "and" + " ".concat(user1) + "!";
 
 console.log(greeting);
 
@@ -39,7 +39,7 @@ let toStringValue = parseFloatValue1.toString();
 
 console.log(parseFloatValue1, typeof parseFloatValue1);
 console.log(isNanValue);
-console.log(toFixedValue, typeof toFixedValue );
+console.log(toFixedValue, typeof toFixedValue);
 console.log(toStringValue, typeof toStringValue);
 
 // 4.Створіть змінну зі значенням "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikipedia Foundation."
@@ -49,7 +49,8 @@ console.log(toStringValue, typeof toStringValue);
 // - перевірте чи закінчується дана строка cловом "foundation"
 // Всі результати виконання виведіть в консоль
 
-const someText = "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikipedia Foundation.";
+const someText =
+  "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikipedia Foundation.";
 
 console.log(someText.length);
 console.log(someText.replaceAll("Wikipedia", "Text"));
@@ -83,7 +84,3 @@ const heightValue = 3;
 const cylinderVol = Math.PI * radiusValue ** 2 * heightValue;
 
 console.log(cylinderVol.toFixed(2));
-
-
-
-

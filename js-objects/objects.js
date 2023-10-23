@@ -16,10 +16,10 @@ automationQA.programmingLanguages = "JavaScript";
 automationQA.age = 28;
 automationQA.languages = ["Ukrainian", "English"];
 automationQA.preferences = {
-    basicPrefences: "table",
-    drinks: "Coffee",
-    food: "pizza",
-}
+  basicPrefences: "table",
+  drinks: "Coffee",
+  food: "pizza",
+};
 console.log(automationQA);
 
 // Tаск 2
@@ -31,13 +31,12 @@ console.log(automationQA);
 // Виведіть у консоль значення name, window.
 
 let room = {
-    name: "bedroom",
-    size: 20,
-    window: true,
+  name: "bedroom",
+  size: 20,
+  window: true,
 };
 
 console.log(`Room: ${room.name}, Window: ${room.window}`);
-
 
 // Таск 3
 // Створіть обєкт movie
@@ -51,16 +50,16 @@ console.log(`Room: ${room.name}, Window: ${room.window}`);
 // Виведіть оновлений обєкт movie у консоль.
 
 const movie = {
-    title: "The Shining",
-    releaseYear: 1980,
-    genre: "Psychological thriller",
+  title: "The Shining",
+  releaseYear: 1980,
+  genre: "Psychological thriller",
 };
 
 movie.title = "American Horror Story";
 movie.genre = "horror";
 movie.cast = {
-    mainRole1: "Evan Peters",
-    mainRole2: "Kathy Bates",
+  mainRole1: "Evan Peters",
+  mainRole2: "Kathy Bates",
 };
 movie.director = "Ryan Murphy";
 
@@ -95,37 +94,35 @@ console.log(movie);
 // Виведіть оновлений масив об’єктів englishBooks
 
 const englishBooks = [
-    {
-        title: "To Kill a Mockingbird",
-        author: "Harper Lee",
-        year: 1960
-    },
-    {
-        title: "1984",
-        author: "George Orwell",
-        year: 1949
-    },
-    {
-        title: "The Great Gatsby",
-        author: "F. Scott Fitzgerald",
-        year: 1925
-    }
-
+  {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    year: 1960,
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    year: 1949,
+  },
+  {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    year: 1925,
+  },
 ];
 
 for (let i = 0; i < englishBooks.length; i++) {
-    if (englishBooks[i].title === "The Great Gatsby") {
-        continue;
-    }
-    if (englishBooks[i].year > 1940) {
-        console.log(`year: ${englishBooks[i].year}`)
-    }
-    if (englishBooks[i].author === "George Orwell") {
-        englishBooks[i].author = "changed value";
-    }
+  if (englishBooks[i].title === "The Great Gatsby") {
+    continue;
+  }
+  if (englishBooks[i].year > 1940) {
+    console.log(`year: ${englishBooks[i].year}`);
+  }
+  if (englishBooks[i].author === "George Orwell") {
+    englishBooks[i].author = "changed value";
+  }
 }
-console.log(englishBooks)
-
+console.log(englishBooks);
 
 // Таск 5
 
@@ -134,54 +131,54 @@ console.log(englishBooks)
 
 
 let cinemaSessions = {
-    thrillers: {
-        name: "Misery",
-        time: "17pm",
-        hall: 1
-    }
-}
+  thrillers: {
+    name: "Misery",
+    time: "17pm",
+    hall: 1,
+  },
+};
 
 for (let key in cinemaSessions) {
-    if (cinemaSessions.hasOwnProperty(key)) {
-        const object2 = cinemaSessions[key];
-        console.log(key);
-        for (let keys in object2) {
-            if (object2.hasOwnProperty(keys)) {
-                const values = object2[keys];
-                console.log(`${keys}: ${values}`)
-            }
-        }
+  //eslint-disable-next-line no-prototype-builtins
+  if (cinemaSessions.hasOwnProperty(key)) {
+    const object2 = cinemaSessions[key];
+    console.log(key);
+    for (let keys in object2) {
+      //eslint-disable-next-line no-prototype-builtins
+      if (object2.hasOwnProperty(keys)) {
+        const values = object2[keys];
+        console.log(`${keys}: ${values}`);
+      }
     }
+  }
 }
-
-
 
 // Таск 6
 // Створіть обєкт user з властивостями name, age, email, address. Address має бути обєктом
 // наприкд: address: {city: "your value", postalCode: "your value"}
 // Створіть функцію getUserInfo, яка приймає об'єкт користувача в якості параметру
 // та використовує деструктуризацію для отримання name, age користувача
-// Створіть функцію getFullAddress, яка приймає об'єкт користувача в якості параметру 
-// та використовує деструктуризацію для отримання емейлу, міста та поштового коду користувача. 
+// Створіть функцію getFullAddress, яка приймає об'єкт користувача в якості параметру
+// та використовує деструктуризацію для отримання емейлу, міста та поштового коду користувача.
 // Наприклад: address: { city, postalCode }
 // Виведіть інформацію про користувача та емейл і його адресу, використовуючи результати функцій getUserInfo та getFullAddress.
 
 const user = {
-    name: "Alisa",
-    age: 28,
-    email: "alisa@gmail.com",
-    address: {
-        city: "Zaporizhzhia",
-        postalCode: "69000"
-    }
+  name: "Alisa",
+  age: 28,
+  email: "alisa@gmail.com",
+  address: {
+    city: "Zaporizhzhia",
+    postalCode: "69000",
+  },
 };
 
 function getUserInfo({ name, age }) {
-    return `Name: ${name}, Age: ${age}`;
+  return `Name: ${name}, Age: ${age}`;
 }
 
 function getFullAddress({ email, address: { city, postalCode } }) {
-    return `Email: ${email}, Address: ${city}, ${postalCode}`;
+  return `Email: ${email}, Address: ${city}, ${postalCode}`;
 }
 
 const userInfo = getUserInfo(user);
@@ -189,8 +186,7 @@ const fullAddress = getFullAddress(user);
 
 console.log(userInfo, ",", fullAddress);
 
-
-// *Advanced. Створіть обєкт user з властивостями name, age, email, address. 
-// Address має бути обєктом address: {city: "your value", postalCode: "your value"}. 
+// *Advanced. Створіть обєкт user з властивостями name, age, email, address.
+// Address має бути обєктом address: {city: "your value", postalCode: "your value"}.
 // Спробуйте створити функції getUserInfo та getFullAddress в одному рядку за допомогою деструктуризації аргументу функції.
 // PS: Advanced по бажанню.
